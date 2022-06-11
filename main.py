@@ -25,7 +25,7 @@ load_dotenv()
 
 # get environmental variables
 uri = os.getenv('URI')
-client = MongoClient(uri)
+client = MongoClient(uri, connect=False)
 token = os.getenv('TOKEN')
 chat_id = os.getenv('CHAT_ID')
 
